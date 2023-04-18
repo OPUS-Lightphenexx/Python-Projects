@@ -56,17 +56,6 @@ plt.grid()
 plt.show()
 
 
-
-#根据大类发现产品大类指标，随着该代码的增加，其需求越高
-#pivot_table_class = read_csv1.pivot_table(index=['first_cate_code'],values=['ord_qty'],aggfunc=sum)
-#print(pivot_table_class)
-#plt.bar(x=pivot_table_class.index,height=pivot_table_class['ord_qty'])
-#plt.xlabel('First Class')
-#plt.ylabel('Order Amount')
-#plt.title('First Class-Needs')
-#plt.grid()
-#plt.show()
-
 #线下线上售卖情况
 pivot_table_sales_chan = read_csv1.pivot_table(index=['sales_chan_name'],values=['ord_qty'],aggfunc=sum)
 print(pivot_table_sales_chan)
@@ -101,7 +90,5 @@ plt.xticks(x)
 plt.grid()
 plt.show()
 
-#price_total_graph_delete_error_what = pd.read_csv(r'C:\Users\14380\Desktop\Data Mining Projects\异常值处理item code-price.csv')
-#plt.violinplot(dataset=price_total_graph_delete_error['11'])
-#plt.show()
+
 
