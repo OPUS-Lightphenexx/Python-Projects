@@ -111,6 +111,3 @@ plt.xticks(x)
 plt.grid()
 plt.show()
 
-
-
-
