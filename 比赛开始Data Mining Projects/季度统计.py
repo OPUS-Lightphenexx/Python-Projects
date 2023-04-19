@@ -122,3 +122,40 @@ plt.grid()
 plt.legend()
 plt.show()
 
+#合并起来看看
+x_data_all = [Season_1_2016_ord,
+          Season_2_2016_ord,
+          Season_3_2016_ord,
+          Season_4_2016_ord,
+          Season_1_2017_ord,
+          Season_2_2017_ord,
+          Season_3_2017_ord,
+          Season_4_2017_ord,
+          Season_1_2018_ord,
+          Season_2_2018_ord,
+          Season_3_2018_ord,
+          Season_4_2018_ord]
+plt.plot(x_data_all)
+ticks =                          ['2016_1',
+                                  '2016_2',
+                                  '2016_3',
+                                  '2016_4',
+                                  '2017_1',
+                                  '2017_2',
+                                  '2017_3',
+                                  '2017_4',
+                                  '2018_1',
+                                  '2018_2',
+                                  '2018_3',
+                                  '2018_4']
+plt.xticks(range(0,len(x_data_all)),ticks,rotation=45)
+plt.grid()
+plt.ylabel('Order Amount')
+plt.title('Year-Season Order Amount Descriptive Statistics')
+plt.show()
+plt.bar(x=range(0,len(x_data_all)),height=x_data_all)
+plt.xticks(range(0,len(x_data_all)),ticks,rotation=45)
+plt.grid()
+plt.ylabel('Order Amount')
+plt.title('Year-Season Order Amount Descriptive Statistics')
+plt.show()
