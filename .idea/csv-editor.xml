@@ -94,6 +94,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\比赛开始Data Mining Projects\工作日周末数据\周末数据.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\比赛开始Data Mining Projects\工作日周末数据\工作日数据.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\比赛开始Data Mining Projects\目标数据\predict_sku1.csv">
           <value>
             <Attribute>
