@@ -118,6 +118,7 @@ labels_season = ['{}'.format(i) for i in ['2016','2017','2018']]
 plt.xticks(range(1,4,1),labels_season)
 plt.xlabel('Years')
 plt.ylabel('Order Amount')
+plt.title('Season Order Amount Plot Graph')
 plt.grid()
 plt.legend()
 plt.show()
@@ -135,7 +136,7 @@ x_data_all = [Season_1_2016_ord,
           Season_2_2018_ord,
           Season_3_2018_ord,
           Season_4_2018_ord]
-plt.plot(x_data_all)
+plt.plot(x_data_all,color='red')
 ticks =                          ['2016_1',
                                   '2016_2',
                                   '2016_3',
@@ -149,10 +150,6 @@ ticks =                          ['2016_1',
                                   '2018_3',
                                   '2018_4']
 plt.xticks(range(0,len(x_data_all)),ticks,rotation=45)
-plt.grid()
-plt.ylabel('Order Amount')
-plt.title('Year-Season Order Amount Descriptive Statistics')
-plt.show()
 plt.bar(x=range(0,len(x_data_all)),height=x_data_all)
 plt.xticks(range(0,len(x_data_all)),ticks,rotation=45)
 plt.grid()

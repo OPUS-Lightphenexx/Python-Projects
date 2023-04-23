@@ -94,6 +94,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\比赛开始Data Mining Projects\目标数据\predict_sku1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
