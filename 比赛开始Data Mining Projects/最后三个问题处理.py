@@ -29,7 +29,11 @@ plt.grid()
 plt.show()
 
 #节假日对产品需求量的影响
+holiday = read_csv[read_csv['Holiday']==1].mean()
+non_holiday = read_csv[read_csv['Holiday']==0].mean()
 
+plt.bar(x=range(0,2),height=[holiday,non_holiday])
+plt.show()
 
 #促销（如618、双十一等）对产品需求量的影响
 

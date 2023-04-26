@@ -69,12 +69,12 @@ Q3 = 101
 Q1 = 10
 
 IQR = Q3 - Q1
-upper = read_csv1['ord_qty'] >= (Q3+1.5*IQR)
-lower = read_csv1['ord_qty'] <= (Q1-1.5*IQR)
+int_ord_qty = read_csv1['ord_qty'].astype(int)
+
+upper = int_ord_qty >= (Q3+1.5*IQR)
+lower = int_ord_qty <= (Q1-1.5*IQR)
 print(lower)
 print(upper)
-upper_listing = list(upper)
-print(upper_listing)
 
 
 #线下线上售卖情况

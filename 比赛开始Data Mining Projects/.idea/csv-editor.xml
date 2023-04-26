@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\需求最终表(标出了在原始数据里面没有的数据).csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
