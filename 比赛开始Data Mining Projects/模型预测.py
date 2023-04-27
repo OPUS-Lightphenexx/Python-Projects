@@ -54,8 +54,7 @@ model3 = RandomForestRegressor()
 
 
 predict_read = pd.read_csv(r'C:\Users\14380\Desktop\Python-Projects\比赛开始Data Mining Projects\需求最终表(标出了在原始数据里面没有的数据).csv')
-predict_delete_nan_read = pd.read_csv(r'C:\Users\14380\Desktop\Python-Projects\比赛开始Data Mining Projects\删除缺失值.csv')
-x_predict_data = predict_delete_nan_read[['sales_region_code','first_cate_code','second_cate_code','item_code']]
+x_predict_data = predict_read[['sales_region_code','first_cate_code','second_cate_code','item_code']]
 
 
 model2.fit(x_data,y_data)
@@ -90,8 +89,10 @@ plt.show()
 
 #数据存储
 
-print(len(predict_delete_nan_read['sales_region_code']))
+print(len(predict_read['sales_region_code']))
 print(len(predict2))
-predict_delete_nan_read['线性回归预测'] = predict1[0]
+predict_read['线性回归预测'] = np.round(predict1)
+predict_read['决策树回归预测'] = np.round(predict2)
 
-
+predict_read.to_excel('Final test.xlsx')
+print(predict_read)
