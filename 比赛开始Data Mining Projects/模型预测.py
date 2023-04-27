@@ -3,9 +3,8 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 from sklearn.tree import DecisionTreeRegressor
-from 缺失值处理 import fill
 
-#先进行异常值ko
+#先进行异常值处理
 data = pd.read_csv(r"C:\Users\14380\Desktop\Python-Projects\比赛开始Data Mining Projects\目标数据\order_train1.csv")
 Q3 = 101
 Q1 = 10
@@ -17,9 +16,6 @@ upper = (Q3+1.5*IQR)
 lower = (Q1-1.5*IQR)
 print('l',lower)
 print('u',upper)
-
-
-#Correct = (Q3+1.5*IQR) <= data['ord_qty'] <= (Q1-1.5*IQR)
 
 
 read_csv1 = pd.read_csv(r"C:\Users\14380\Desktop\Python-Projects\比赛开始Data Mining Projects\目标数据\order_train1.csv")
@@ -41,8 +37,6 @@ print(read_csv2)
 x_data = read_csv2[['sales_region_code','first_cate_code','second_cate_code','item_code']]
 y_data = read_csv2['ord_qty']
 print(x_data)
-#x_data = read_csv2[:,0:2]
-#print(x_data)
 
 
 y_ord = read_csv2
@@ -66,12 +60,6 @@ model1.fit(x_data,y_data)
 predict1 = model1.predict(x_predict_data)
 print(model1.score(x_data,y_data))
 print(predict1)
-
-#model3.fit(x_data,y_data)
-#predict3 = model3.predict(x_predict_data)
-#print(model3.score(x_data,y_data))
-#print(predict3)
-
 
 plt.scatter(range(0,len(predict2)),predict2,color='green')
 plt.plot(range(0,len(predict2)),predict2,color='red')
