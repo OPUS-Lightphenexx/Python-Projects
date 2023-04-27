@@ -124,7 +124,11 @@ plt.legend()
 plt.show()
 
 #合并起来看看
-x_data_all = [Season_1_2016_ord,
+#2015年统计
+print(Season_4_2015_Data)
+Season_4_2015_ord = Season_4_2015_Data['19'].sum()
+
+x_data_all = [Season_4_2015_ord,Season_1_2016_ord,
           Season_2_2016_ord,
           Season_3_2016_ord,
           Season_4_2016_ord,
@@ -137,7 +141,7 @@ x_data_all = [Season_1_2016_ord,
           Season_3_2018_ord,
           Season_4_2018_ord]
 plt.plot(x_data_all,color='red')
-ticks =                          ['2016_1',
+ticks =                          ['2015_4','2016_1',
                                   '2016_2',
                                   '2016_3',
                                   '2016_4',

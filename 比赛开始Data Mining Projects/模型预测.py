@@ -48,7 +48,7 @@ print(x_data)
 y_ord = read_csv2
 
 model1 = linear_model.LinearRegression()
-model2 = DecisionTreeRegressor(max_depth=10000,random_state=True)
+model2 = DecisionTreeRegressor(max_depth=23,random_state=True)
 from sklearn.ensemble import RandomForestRegressor
 model3 = RandomForestRegressor()
 
@@ -88,5 +88,10 @@ plt.title('Prediction Using Linear Regression')
 plt.grid()
 plt.show()
 
+#数据存储
+
+print(len(predict_delete_nan_read['sales_region_code']))
+print(len(predict2))
+predict_delete_nan_read['线性回归预测'] = predict1[0]
 
 
